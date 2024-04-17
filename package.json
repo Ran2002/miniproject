@@ -1,0 +1,25 @@
+{
+  "name": "iwtprac",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js,hbs",
+    "server-json": "json-server --watch db.json --port 4000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.18.0",
+    "hbs": "^4.2.0",
+    "json-server": "^1.0.0-alpha.23",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.2"
+  },
+  "description": ""
+}

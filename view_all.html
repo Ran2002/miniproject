@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your CSS styles for product cards here */
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            background-color: #fff;
+            padding: 15px;
+            width: 300px;
+        }
+    
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px 10px;
+            margin: 10px;
+        }
+    
+        .row {
+            margin: 0 -5px;
+            padding-top: 50px;
+        }
+    
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    
+        img {
+            width: 100%;
+            height: 150px;
+        }
+    
+        #more {
+            display: none;
+        }
+    
+        /* Additional styles for product details */
+        .location {
+            margin-top: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            color: red;
+        }
+    
+        .property-info {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            background-color: beige;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    
+        .property-info p {
+            margin: 0;
+        }
+    
+        .property-info span {
+            margin-left: 5px;
+        }
+    
+        .property-description {
+            margin-top: 20px;
+        }
+        .image-container {
+    display: flex;
+    justify-content: flex-start; /* Align the image to the start (left) horizontally */
+    align-items: flex-start; /* Align the image to the start (top) vertically */
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+    margin: 52px; /* Increase the margin to create more space between cards */
+}
+
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="search-container">
+        <form action="/search" method="GET">
+            <input type="text" placeholder="Search Location" name="search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+            
+    <div class="column">
+        <div class="card">
+            <form action="" method="post" class="save" style="position: absolute;top: 1 rem;right: 1 rem;">
+                <button type="submit" name="save" class="far fa-heart" ></button>
+            </form>
+            <div>
+                <img src="https://dynamic.realestateindia.com/prop_images/1354732/763600_1.png" style="width: 100%;">
+                
+                
+            </div><br>
+            <h2>Modern House</h2><br>
+            <p class="location"><i class="fas fa-map-marker-alt" style="color: red;"></i><span style="font-size: 13px;font-weight: 600;padding: 10px;">Raghunathpur,Bhubaneswar</span></p>
+            <br>
+            <div style="display: flex;align-items: flex-start;justify-content: space-between;size: 150px;background-color: beige;padding: 10px;">
+                <p><i class="fas fa-bed"></i><span>3</span></p>
+                <p><i class="fas fa-bath"></i><span>2</span></p>
+                <p><i class="fas fa-maximize"></i><span>950sqft</span></p>
+            </div><br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+    
+    
+    
+    
+            
+          </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <form action="" method="post" class="save" style="position: absolute;top: 1 rem;right: 1 rem;">
+                <button type="submit" name="save" class="far fa-heart" ></button>
+            </form>
+            <div>
+                <img src="https://dynamic.realestateindia.com/prop_images/1354732/763600_1.png" style="width: 100%;">
+                
+                
+            </div><br>
+            <h2>Modern House</h2><br>
+            <p class="location"><i class="fas fa-map-marker-alt" style="color: red;"></i><span style="font-size: 13px;font-weight: 600;padding: 10px;">Raghunathpur,Bhubaneswar</span></p>
+            <br>
+            <div style="display: flex;align-items: flex-start;justify-content: space-between;size: 150px;background-color: beige;padding: 10px;">
+                <p><i class="fas fa-bed"></i><span>3</span></p>
+                <p><i class="fas fa-bath"></i><span>2</span></p>
+                <p><i class="fas fa-maximize"></i><span>950sqft</span></p>
+            </div><br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+    
+    
+    
+    
+            
+          </div>
+    </div><div class="column">
+        <div class="card">
+            <form action="" method="post" class="save" style="position: absolute;top: 1 rem;right: 1 rem;">
+                <button type="submit" name="save" class="far fa-heart" ></button>
+            </form>
+            <div>
+                <img src="https://dynamic.realestateindia.com/prop_images/1354732/763600_1.png" style="width: 100%;">
+                
+                
+            </div><br>
+            <h2>Modern House</h2><br>
+            <p class="location"><i class="fas fa-map-marker-alt" style="color: red;"></i><span style="font-size: 13px;font-weight: 600;padding: 10px;">Jaydev Vihar,Bhubaneswar</span></p>
+            <br>
+            <div style="display: flex;align-items: flex-start;justify-content: space-between;size: 150px;background-color: beige;padding: 10px;">
+                <p><i class="fas fa-bed"></i><span>3</span></p>
+                <p><i class="fas fa-bath"></i><span>2</span></p>
+                <p><i class="fas fa-maximize"></i><span>950sqft</span></p>
+            </div><br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+    
+    
+    
+    
+            
+          </div>
+    </div>
+      
+        
+        
+    <div class="container" id="container"></div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        let url = "http://localhost:4000/property"
+        
+        async function getProducts() {
+            try {
+                let res = await axios(url);
+                let products = res.data;
+                console.log(products);
+                let op = `<div class='row'>`;
+                products.forEach((product) => {
+                    op += `
+                        <div class='column'>
+                            <div class='card'>
+                                <img src="${product.pimg}" style="width: 100%;"><br>
+                                <h2>${product.ptype}</h2><br>
+                                <p class="location"><i class="fas fa-map-marker-alt" style="color: red;"></i><span style="font-size: 13px; font-weight: 600; padding: 10px;">${product.pDestination}</span></p>
+                                <br>
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between; size: 150px; background-color: beige; padding: 10px;">
+                                    <p><i class='fas fa-bed'></i><span>${product.pbed}</span></p>
+                                    <p><i class="fas fa-bath"></i><span>${product.pBath}</span></p>
+                                    <p><i class="fas fa-maximize"></i><span>${product.pArea}sqft</span></p>
+                                </div><br><br>
+                                <p>${product.pDescribe}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+                op += `</div>`;
+                document.getElementById('container').innerHTML = op;
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        getProducts();
+
+        
+    </script>
+    
+        
+        <footer class="footer">
+            
+            <section class="flex">
+         
+               <div class="box">
+                  <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
+                  <a href="tel:1112223333"><i class="fas fa-phone"></i><span>1112223333</span></a>
+                  <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>shaikhanas@gmail.com</span></a>
+                  <a href="#"><i class="fas fa-map-marker-alt"></i><span>mumbai, india - 400104</span></a>
+               </div>
+         
+               <div class="box">
+                  <a href="home.html"><span>home</span></a>
+                  <a href="about.html"><span>about</span></a>
+                  <a href="contact.html"><span>contact</span></a>
+                  <a href="listings.html"><span>all listings</span></a>
+                  <a href="#"><span>saved properties</span></a>
+               </div>
+         
+               <div class="box">
+                  <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+                  <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+         
+               </div>
+         
+            </section>
+         <br><br>
+            <div class="credit">&copy; copyright @ 2024 by <span>abc</span> | all rights reserved!</div>
+         
+         </footer>
+      
+</body>
+</html>
